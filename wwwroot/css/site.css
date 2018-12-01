@@ -40,12 +40,12 @@ body {
 
 #menu{
 
-    background:#222;
+    background:#FFF5EE;
     width: 95%;
     height: 10%;
     margin-left: 5%;
     margin-top:1%;
-    box-shadow:4px 5px 4px  #04a824;
+    box-shadow:4px 5px 4px  #808080;
     overflow:hidden;
     border-radius:7px;
     
@@ -66,7 +66,7 @@ body {
         display: block;
         width:90%;
         font-weight: bold;
-        color: #999;
+        color:#008080;
         height:30px;
         float: left;
         text-align: left;
@@ -79,6 +79,190 @@ body {
     }
 
     #menu a:hover, a:active {
+<<<<<<< HEAD
+        background-color:#888;
+    
+    }
+
+    #content{
+        background-color: #FFF5EE;
+        width: 100%;
+        margin-top: 1%;
+        float: left;
+        }
+        
+        
+        #slide{
+        float: left;
+        width: 50%;
+        height: 55%;
+        margin-left: 3%;
+        margin-top:1%;
+        margin-bottom: 1%;
+        box-shadow:4px 5px 4px  #808080;
+        
+        }
+        
+        #carousel{
+            width:100%;
+          float: left;
+            height:350px; 
+            overflow:hidden;
+        }
+        #carousel ul{
+            list-style:none;
+            width:560%;
+            height:350px;	
+        }
+        #carousel ul li{
+            float:left;
+            width:18%;
+            height:350px;	
+        }
+        #carousel ul li img{
+            width:100%;
+            height:350px;
+        }
+
+        #ads{
+
+            background-color: #008080;
+            width: 35%;
+            height: 35%;
+            float: left;
+            margin-left: 3%;
+            margin-top:2%;
+            }
+
+            .Pro {
+                position: absolute;
+                width: 35%;
+                height: 40%;
+                overflow: hidden;
+                
+                }
+                
+                
+                
+                .Pro img {
+                  width: 100%;
+                  height: 100%;
+                
+                }
+
+
+        /*efectos over*/
+
+        .pro_overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: white;
+            transform: translateY(100%);
+            transition: transform .35s ease-out;
+        }
+        
+        .Pro:hover .pro_overlay {
+            transform: translateY(0);
+        }
+        
+        .pro_overlay_title {
+            margin: 0;
+            padding: 0 0 12px;
+            transform: translateY( calc(-100% - 10px) ); /* +10px overlay padding */
+            transition: transform .35s ease-out;
+        }
+        
+        .Pro:hover .pro_overlay_title {
+            transform: translateY(0);
+        }
+        
+        
+        
+        
+        .Pro::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: transparent;
+            transition: background .35s ease-out;
+        }
+        .Pro:hover::before {
+            background: rgba(0, 0, 0, .7);
+        }
+        
+        /*estilodes de board table */
+
+
+        #aprendi{
+        float: left;
+         width: 100%;
+         background:#21b2e9 50% 100% no-repeat; 
+
+        }
+
+        #mensaje{
+
+            float: left;
+            width: 18%;
+            height: 10%;
+            margin-left: 40%
+        }
+
+        #mensaje h1{
+            color: white;
+        }
+
+        #boxes{
+            background: #21b2e9;
+            width: 100%;
+            float: left;
+        }
+
+        #box1{
+            background-color: white;
+            margin-left: 3%;
+         float: left;
+         width: 30%;
+         height: 230px;
+         text-align: center;
+         margin-bottom: 2%;
+        }
+
+        #box2{
+            float: left;
+            background-color: white;
+            width: 30%;
+            height: 230px;
+            margin-left: 2%;
+            text-align: center;
+            margin-bottom: 2%;
+
+        }
+
+        #box3{
+            float: left;
+            background-color: white;
+            width: 30%;
+            height: 230px;
+            text-align: center;
+            margin-left: 2%;
+            margin-bottom: 2%;
+
+        }
+
+        #text{
+            float: left;
+            margin-left: 40%;
+            color: white;
+        }
+=======
         background-color: #333;
     }
 
@@ -7004,78 +7188,4 @@ a.bg-danger:focus, a.bg-danger:hover {
     }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
-
-#menu {
-    background: #FFF5EE;
-    width: 95%;
-    height: 10%;
-    margin-left: 5%;
-    margin-top: 1%;
-    box-shadow: 4px 5px 4px #808080;
-    overflow: hidden;
-    border-radius: 7px;
-}
-
-    /* Estilos para el menu */
-    #menu ul {
-        list-style-type: none;
-        margin: 3px;
-        padding: 5px;
-        overflow: hidden;
-    }
-
-    #menu li {
-        float: left;
-    }
-
-    #menu a:link, a:visited {
-        display: block;
-        width: 90%;
-        font-weight: bold;
-        color: #008080;
-        height: 30px;
-        float: left;
-        text-align: left;
-        margin-left: 90px;
-        padding: 6px;
-        padding-left: 1px;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        text-decoration: none;
-    }
-
+    
