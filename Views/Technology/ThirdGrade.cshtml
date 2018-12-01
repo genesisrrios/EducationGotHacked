@@ -4,28 +4,26 @@
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div class="tm-welcome-box">
+	<div class="tm-welcome-text">
+		<h2 class="tm-section-title">Lorem ipsum dolor</h2>
+		<p>Vivamus eleifend ac turpis sit amet maximus. Nulla in faucibus nisl, ut ultrices magna.</p>
+	</div>
+	<a href="#" class="tm-welcome-link tm-button">Read Details</a>
+</div>
+<div class="tm-welcome-box">
+	<div class="tm-welcome-text">
+		<h2 class="tm-section-title">Lorem ipsum dolor</h2>
+		<p>Vivamus eleifend ac turpis sit amet maximus. Nulla in faucibus nisl, ut ultrices magna.</p>
+	</div>
+	<a href="#" class="tm-welcome-link tm-button">Read Details</a>
+</div>
+<div class="tm-welcome-box">
+	<div class="tm-welcome-text">
+		<h2 class="tm-section-title">Lorem ipsum dolor</h2>
+		<p>Vivamus eleifend ac turpis sit amet maximus. Nulla in faucibus nisl, ut ultrices magna.</p>
+	</div>
+	<a href="#" class="tm-welcome-link tm-button">Read Details</a>
+</div>
 
-<div></div>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-<img id="drag1" src="~/images/motherboard.png" draggable="true"
-	 ondragstart="drag(event)">
-
-
-<script>
-	function allowDrop(ev) {
-		ev.preventDefault();
-	}
-
-	function drag(ev) {
-		ev.dataTransfer.setData("text", ev.target.id);
-	}
-
-	function drop(ev) {
-		ev.preventDefault();
-		var data = ev.dataTransfer.getData("text");
-		ev.target.appendChild(document.getElementById(data));
-	}
-</script>
