@@ -13,5 +13,20 @@ namespace EducationGotHacked.Controllers
             
             return View();
         }
+        public IActionResult K12()
+        {
+
+            return View();
+        }
+        public IActionResult FirstGrade()
+        {
+
+            return View();
+        }
+        public IActionResult ThirdGrade()
+        {
+
+            return View();
+        }
     }
 }
