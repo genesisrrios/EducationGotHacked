@@ -17,7 +17,7 @@ namespace EducationGotHacked.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page :D";
+            ViewData["Message"] = "Your application description page.";
 
             return View();
         }
