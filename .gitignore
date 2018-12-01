@@ -94,6 +94,7 @@ StyleCopReport.xml
 *.svclog
 *.scc
 
+dir_to_ignore/.vscode
 # Chutzpah Test files
 _Chutzpah*
 
