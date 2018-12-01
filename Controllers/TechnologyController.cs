@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EducationGotHacked.Controllers
 {
-    public class StudentGradesController : Controller
+    public class TechnologyController : Controller
     {
         public IActionResult Index()
         {
