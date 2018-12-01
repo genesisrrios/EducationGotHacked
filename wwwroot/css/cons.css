@@ -2,5 +2,6 @@
 }
 
 #box {
-    width: 900px
+    width: 900px;
+    background-color: red;
 }
