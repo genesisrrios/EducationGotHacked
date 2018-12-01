@@ -10,6 +10,7 @@ namespace EducationGotHacked.Controllers
     {
         public IActionResult Index()
         {
+            
             return View();
         }
     }
