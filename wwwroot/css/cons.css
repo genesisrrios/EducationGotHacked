@@ -21,3 +21,9 @@
     border-top-width: 0px;
     border-top: 1px solid #eee;
 }
+
+.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
