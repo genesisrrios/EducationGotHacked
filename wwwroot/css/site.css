@@ -7278,43 +7278,44 @@ a.bg-danger:focus, a.bg-danger:hover {
         height: 100%;
     }
 
-#ram {
-    width: 33%;
-    height: 8%;
-    float: left;
-    background-color: white;
-    position: fixed;
-    margin-top: 30%;
-    margin-left: 25%;
-}
-
 #CPU {
-    width: 15%;
+    width: 11%;
     height: 20%;
     float: left;
     background-color: white;
-    position: fixed;
-    margin-top: 15%;
-    margin-left: 45%;
+    position: absolute;
+    margin-top: 16%;
+    background-color: white;
+    margin-left: 32.6%;
+}
+
+#ram {
+    width: 14%;
+    height: 8%;
+    float: left;
+    background-color: white;
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 20%;
 }
 
 #battery {
     background-color: white;
-    width: 5%;
-    height: 10%;
+    width: 4%;
+    height: 8%;
     float: left;
-    position: fixed;
-    margin-top: 26%;
-    margin-left: 3%;
+    position: absolute;
+    margin-top: 27.9%;
+    margin-left: 1.9%;
     border-radius: 20%;
 }
 
 
 #GPU {
     background-color: white;
-    position: fixed;
+    position: absolute;
     width: 3%;
     height: 30%;
-    margin-top: 15%;
-    margin-left: 20%;
+    margin-top: 11%;
+    margin-left: 10.5%;
 }
