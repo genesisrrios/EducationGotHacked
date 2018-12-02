@@ -13,17 +13,17 @@ namespace EducationGotHacked.Controllers
             
             return View();
         }
-        public IActionResult K12()
-        {
-
-            return View();
-        }
-        public IActionResult FirstGrade()
-        {
-
-            return View();
-        }
         public IActionResult ThirdGrade()
+        {
+
+            return View();
+        }
+        public IActionResult FourthGrade()
+        {
+
+            return View();
+        }
+        public IActionResult FifthGrade()
         {
 
             return View();
@@ -33,5 +33,12 @@ namespace EducationGotHacked.Controllers
 
             return View();
         }
+        public IActionResult CreateJournal()
+        {
+
+            return View();
+        }
+
+
     }
 }
