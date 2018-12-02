@@ -1,8 +1,74 @@
 ﻿
 @{
-    ViewData["Title"] = "CreateJournal";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewData["Title"] = "CreateJournal";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>CreateJournal</h2>
+
+<html>
+<head>
+	<title>Crea tu propio diario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			text-align: center;
+		}
+		textarea {
+			width: 40%;
+			float: left;
+			min-height: 250px;
+			overflow: scroll;
+			margin: auto;
+			display: inline-block;
+			background: #f4f4f9;
+			outline: none;
+			font-family: Courier, sans-serif;
+			font-size: 14px;
+		}
+		iframe {
+			bottom: 0;
+			position: relative;
+			width: 420px;
+			height: 250px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>
+			En esta pantalla podrás escribir tu propio diario.
+		</h1>
+	</div>
+	<div>
+		<h2>Utilizando HTML</h2>
+	</div>
+	<div>
+	</div>
+	<textarea id="html" placeholder="HTML"></textarea>
+	<iframe id="code"></iframe>
+
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
+<script>
+
+
+	function compile() {
+		var html = document.getElementById("html");
+		var code = document.getElementById("code").contentWindow.document;
+
+		document.body.onkeyup = function () {
+			code.open();
+			code.writeln(
+				html.value 
+    );
+    code.close();
+  };
+}
+
+	compile();
+	</script>
+
 
