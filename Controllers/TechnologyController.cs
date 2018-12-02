@@ -28,5 +28,10 @@ namespace EducationGotHacked.Controllers
 
             return View();
         }
+        public IActionResult PCAssembly()
+        {
+
+            return View();
+        }
     }
 }
