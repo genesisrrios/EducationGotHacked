@@ -7195,3 +7195,128 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
     
+
+#wrapper {
+    margin: auto;
+    width: 100%;
+}
+
+#content {
+    background-color: #222;
+    width: 100%;
+    margin-top: 1%;
+    float: left;
+}
+
+#compo {
+    float: left;
+    background-color: white;
+    height: 82%;
+    width: 30%;
+}
+
+#compo1 {
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: #666;
+}
+
+    #compo1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+#compo2 {
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: #666;
+    margin-top: 4%;
+}
+
+    #compo2 img {
+        width: 50%;
+        height: 100%;
+    }
+
+
+#compo3 {
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: #666;
+    margin-top: 4%;
+}
+
+#compo4 {
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: #666;
+    margin-top: 4%;
+}
+
+#compo3 img {
+    width: 50%;
+    height: 100%;
+}
+
+#compo4 img {
+    width: 80%;
+    height: 100%;
+}
+
+#motherb {
+    height: 90%;
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+    background-color: #666;
+}
+
+    #motherb img {
+        width: 100%;
+        height: 100%;
+    }
+
+#ram {
+    width: 33%;
+    height: 8%;
+    float: left;
+    background-color: white;
+    position: fixed;
+    margin-top: 30%;
+    margin-left: 25%;
+}
+
+#CPU {
+    width: 15%;
+    height: 20%;
+    float: left;
+    background-color: white;
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 45%;
+}
+
+#battery {
+    background-color: white;
+    width: 5%;
+    height: 10%;
+    float: left;
+    position: fixed;
+    margin-top: 26%;
+    margin-left: 3%;
+    border-radius: 20%;
+}
+
+
+#GPU {
+    background-color: white;
+    position: fixed;
+    width: 3%;
+    height: 30%;
+    margin-top: 15%;
+    margin-left: 20%;
+} 
