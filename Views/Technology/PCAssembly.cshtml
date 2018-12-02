@@ -2,3 +2,85 @@
 	ViewData["Title"] = "PCAssembly";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<html>
+<head>
+
+</head>
+
+<body>
+
+	<script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+	</script>
+	<script src="anime.min.js"></script>
+
+
+
+	<div id="wrapper">
+
+
+		<div id="content">
+
+			<div id="compo">
+
+				<div id="compo1">
+					<img id="drag2" src="/images/ram.png" draggable="true" ondragstart="drag(event)">
+				</div><!--compo1-->
+
+				<div id="compo2">
+					<img id="drag3" src="/images/cpu.png" draggable="true" ondragstart="drag(event)">
+				</div><!--compo2-->
+
+				<div id="compo3">
+					<img id="drag4" src="/images/batter.png" draggable="true" ondragstart="drag(event)">
+				</div><!--compo3-->
+
+				<div id="compo4">
+					<img id="drag5" src="/images/gpu.png" draggable="true" ondragstart="drag(event)">
+				</div><!--compo4-->
+			</div><!--end of compo-->
+
+
+			<div id="motherb">
+				<div id="ram" class="image" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+
+				<div id="CPU" class="image" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+
+				<div id="battery" class="image" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+
+				<div id="GPU" class="image" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+				<img class="image" src="/images/motherboard.png" />
+
+
+			</div><!--end of motherd-->
+
+
+
+		</div><!--end of content-->
+
+
+	</div><!--end of wrapper-->
+
+
+
+</body>
+
+
+</html>
+
