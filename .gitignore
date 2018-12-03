@@ -1297,6 +1297,7 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
+**/ScreenShots*
 # Click-Once directory
 publish/
 
