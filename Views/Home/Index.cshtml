@@ -1,99 +1,70 @@
-﻿@{
-	ViewData["Title"] = "Home Page";
-}
-<html>
-<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+﻿
+    <!-- Page Content -->
+    <div class="container">
 
-	<script type="text/javascript">
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">A Warm Welcome!</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+      </header>
 
-				<!-- Comienza la funcion que prepara el frame y lo trae con las laminas escondidas y solo se ve la primera -->
-		$(document).ready(function(){
-			
-			setInterval(function() { <!-- Intervalo de tiempo para hacer refresh a la pagina este valor es de 1 segundo -->
-			<!----------------------------------------------------Raymond Garcia cambie el margin left antes 600px por que tenia problemas el las animaciones con el responsive ------------------------------------------>
-			$('#carousel ul').animate({marginLeft:'-100%'},1000,function(){<!--Crea una variable y en ella lleva el reset a 600px del lado izquierdo para la animacion. -->
+      <!-- Page Features -->
+      <div class="row text-center">
 
-				
-				$(this).find("li:last").after($(this).find("li:first"));<!--Busca la primera lamina y la ultima para asi desplegarlas en el frame. -->
-				$(this).css({marginLeft:0}); <!--Crea variable para modificar el CSS y asi cambiar los defaults de los margenes  -->
-				
-				});
-			},4000);<!--Tiempo de cambio de una a otra este valor es de 4 segundos -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
 
-			});
-		</script>  <!--Termina el scrip de Jquery y el Script de desplegar las imagenes -->
-</head>
-<body>
-	<div id="wrapper">
-		<div id="particles-js"></div>
-		<script src="~/js/particles.js"></script>
-		<div id="content">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
 
-			<div id="slide">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
 
-				<div id="carousel">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
 
-					<ul>
-						<!--Comienzan las laminas y no se presentan solo la primera -->
-						<li><img src="images/1.jpg" /></li>
-						<li><img src="images/2.jpg" /></li>
+      </div>
+      <!-- /.row -->
 
-
-					</ul>
-				</div><!--fin de carousel-->
-
-			</div><!-- fin de slide-->
-
-			<div id="ads">
-
-				<div class="Pro">
-					<img class="image" src="images/3.jpg" />
-					<div class="pro_overlay">
-						<h1 class="pro_overlay_title">Tecnologia </h1>
-						<p class="pro_overlay_cont">Herramientas para educar a niños de primero a grado 12.</p>
-
-					</div>
-				</div><!--fin de Pro-->
-			</div><!--fin de ads-->
-
-			<div id="aprendi">
-				<div id="mensaje">
-
-					<h1>Aprendizaje</h1>
-
-				</div>
-
-
-
-			</div><!--end of eprendi-->
-
-			<div id="boxes">
-				<div id="box2">
-					<h2 class="box2">Contenido</h2>
-					<p>Nuestra Web se enfonca en las materias como Tecnologia, Matematicas, Español, Ingles y entre otras. De esta manera los niños podrian aprenden de distintas menras en las areas que afronten problemas o dificultades.</p>
-
-
-				</div><!--end of box2-->
-
-				<div id="box1">
-					<h2 class="box1">Audiencia</h2>
-					<p>Esta aplicacion web esta dirigida a niños que esten cursando de k12 hasta grado 12. Atravez de enseñansa interactiva para poder aprender sobre laTecnologia en diferentes areas.</p>
-
-				</div><!--end of box1-->
-
-				<div id="box3">
-					<h2 class="box3">Aprendizaje</h2>
-					<p>Hoy dia los niños prefiren hacer uso de la tecnologia para cualquier cosa, la idea de este pryecto es capturar la atencion de los niños para que ellos puedan desarrollar nuevas tecnicas de prendizaje por su cuenta.</p>
-
-
-				</div><!--end of box3-->
-
-				<h3 class="center">¡Diviértete aprendiendo!</h3>
-			</div><!--end of boxes-->
-
-		</div><!--end of content-->
-
-	</div><!--end of wrapper-->
-</body>
-</html>
+    </div>
