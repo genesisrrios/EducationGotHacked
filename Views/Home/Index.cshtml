@@ -1,74 +1,119 @@
-﻿
-    <!-- Page Content -->
+﻿<!-- Page Content -->
 <div class="container">
+	<style>
+		.main-images {
+			height: 500px;
+			overflow: hidden;
+			position: relative;
+		}
 
-	<!-- Jumbotron Header -->
+			.main-images image {
+				position: absolute;
+				display: none;
+				background-position: 50% 50%;
+				background-size: cover;
+				width: 100%;
+			}
+	</style>
 	<section>
-		<header class="jumbotron my-4">
-			<h1 class="display-3">¡Aprende Disfrutando!</h1>
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-			<img src="~/images/1.jpg"  class="img-fluid"/>
+		<header class="display-1 text-center">
+			<h1 class="display-3 text-center">¡Aprende Disfrutando!</h1>
+			<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+			<div class="main-images">
+				<img src="~/images/Index/index-image-1.jpg" class="img-fluid main-image" />
+				<img src="~/images/Index/index-image-2.jpg" class="img-fluid main-image" />
+				<img src="~/images/Index/index-image-3.jpg" class="img-fluid main-image" />
+				<img src="~/images/Index/index-image-4.jpg" class="img-fluid main-image" />
+			</div>
 		</header>
 	</section>
 	</>
-
-
-	<!-- Page Features -->
+	<br />
+	<h2 class="display-4 text-center">¡Selecciona por materia!</h2>
 	<div class="row text-center">
 
 		<div class="col-lg-3 col-md-6 mb-4">
 			<div class="card">
-				<img class="card-img-top" src="http://placehold.it/500x325" alt="">
+				<img class="card-img-top" src="~/images/Index/index-image-technology.jpg" alt="Technologia">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Tecnología</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
 				</div>
 				<div class="card-footer">
-					<a href="#" class="btn btn-primary">Find Out More!</a>
+					<a href="@Url.Action("Index", "Technology")" class="btn btn-primary">Find Out More!</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-lg-3 col-md-6 mb-4">
 			<div class="card">
-				<img class="card-img-top" src="http://placehold.it/500x325" alt="">
+				<img class="card-img-top" src="~/images/Index/index-image-cience.jpg" alt="">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Ciencia</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
 				</div>
 				<div class="card-footer">
-					<a href="#" class="btn btn-primary">Find Out More!</a>
+					<a href="@Url.Action("Index", "Science")" class="btn btn-primary">Find Out More!</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-lg-3 col-md-6 mb-4">
 			<div class="card">
-				<img class="card-img-top" src="http://placehold.it/500x325" alt="">
+				<img class="card-img-top" src="~/images/Index/index-image-english.jpg" alt="">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Ingles</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
 				</div>
 				<div class="card-footer">
-					<a href="#" class="btn btn-primary">Find Out More!</a>
+					<a href="@Url.Action("Index", "English")" class="btn btn-primary">Find Out More!</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-lg-3 col-md-6 mb-4">
 			<div class="card">
-				<img class="card-img-top" src="http://placehold.it/500x325" alt="">
+				<img class="card-img-top" src="~/images/Index/index-image-spanish.jpg" alt="">
 				<div class="card-body">
-					<h4 class="card-title">Card title</h4>
+					<h4 class="card-title">Español</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
 				</div>
 				<div class="card-footer">
-					<a href="#" class="btn btn-primary">Find Out More!</a>
+					<a href="@Url.Action("Index", "Spanish")" class="btn btn-primary">Find Out More!</a>
 				</div>
 			</div>
 		</div>
+
+		@*<div class="col-lg-3 col-md-6 mb-4">
+				<div class="card">
+					<img class="card-img-top" src="~/images/Index/index-image-history.jpg" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Historia</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+					</div>
+					<div class="card-footer">
+						<a href="@Url.Action("Index", "Technology")" class="btn btn-primary">Find Out More!</a>
+					</div>
+				</div>
+			</div>*@
 
 	</div>
 	<!-- /.row -->
-
 </div>
+<script>
+	//Animates the images
+	var slideIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("main-image");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > x.length) { slideIndex = 1 }
+		x[slideIndex - 1].style.display = "inline-block";
+		setTimeout(carousel, 4000);
+	}
+</script>
